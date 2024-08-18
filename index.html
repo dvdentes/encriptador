@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de mensajes</title>
+    <link rel="stylesheet" href="style.css">
+<!-- se aplico la fuente de la lectra aqui por la ayuda de alura-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">   
+</head>
+    <body>
+        <header>
+            <img class="img" src="imagenes/Logo.png" alt="Logo Alura" >
+        </header>
+
+        <main>
+            <form class="form__section">
+                <textarea class="form__input" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="submit__conteiner">                    
+                    <div class="alert__msj"><img src="imagenes/aviso.png" alt="Imagen alerta">
+                        <span>Solo letras minúsculas y sin acentos</span>
+                    </div>              
+                    <div>
+                        <input class="form__btn" type="submit" value="Encriptar">
+                        <input class="form__btn form__btn--secundary" type="submit" value="Desencriptar">                  
+                    </div>                  
+                </div>                      
+            </form> 
+            <aside class="result">
+                <img class="result__imagen" src="imagenes/Muñeco.png" alt="imagen muñeco">
+                <div class="loader hidden"></div>               
+                <div class="result__container">
+                    <h2 class="result__title">Ningun mensaje fue encontrado</h2>
+                    <p class="result__text">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <button class="result__btn form__btn form__btn--secundary hidden">Copiar</button>
+                </div>
+            </aside>            
+        </main>         
+        
+        <script src="script.js"></script>      
+        <footer></footer>      
+    </body>
+</html>
+
